@@ -140,7 +140,7 @@ public class LogIn extends javax.swing.JFrame {
        try{
            Connection conn = ConnectionProvider.getCon();
            Statement st = conn.createStatement();
-           ResultSet rs = st.executeQuery("select * from signUp where email = '"+email+"' and pass ='"+pass+"'");
+           ResultSet rs = st.executeQuery("select * from login where email = '"+email+"' and pass ='"+pass+"'");
           
            if(rs.next())
            {

@@ -171,7 +171,7 @@ public class signup extends javax.swing.JFrame {
             try{
             Connection con = ConnectionProvider.getCon();
             Statement st = con.createStatement();
-            st.executeUpdate("Insert into signUp value('"+name+"','"+email+"','"+password+"','"+address+"')");
+            st.executeUpdate("Insert into login value('"+name+"','"+email+"','"+password+"','"+address+"')");
             JOptionPane.showMessageDialog(null,"Successfully Sign Up");
             setVisible(false);
             new home().setVisible(true);

@@ -13,7 +13,7 @@ public class ConnectionProvider {
     {
         try{
            Class.forName("com.mysql.cj.jdbc.Driver");
-           Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel","root","12345");
+           Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hotel","root","Pagol@420");
            return con;
         }
         catch(Exception e)
